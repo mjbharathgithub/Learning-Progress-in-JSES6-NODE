@@ -1,0 +1,5 @@
+This is a sample file used to learn files module in nodejs
+This is appended using appendFileSync() method and this file too creates a new file if its not present 
+This is appended using appendFileSync() method and this file too creates a new file if its not present 
+This is appended using appendFileSync() method and this file too creates a new file if its not present 
+This is appended using appendFileSync() method and this file too creates a new file if its not present 

@@ -1,0 +1,1 @@
+This method creates a new file and writes the message in the file if the file is already created then it overides the data in the file 
