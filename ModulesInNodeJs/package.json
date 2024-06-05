@@ -1,0 +1,15 @@
+{
+  "name": "modulesinnodejs",
+  "version": "1.0.0",
+  "description": "This project is used to learn about packages",
+  "main": "childProcess.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Bharath",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "figlet": "^1.7.0"
+  }
+}
