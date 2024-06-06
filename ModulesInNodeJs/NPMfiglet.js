@@ -14,17 +14,40 @@ app.get("/courses", (req, res) => {
 });
 
 app.post("/courses/:name", (req, res) => {
-  const course = courses.find(c => c.name === req.params.name);
-  if (course) {
-    res.send(course);
-  } else {
-    res.status(404).send('Course not found');
+  try{
+    courses.push({id:courses.length+1,name:req.params.name});
+  res.send(`${req.params.name} is added successfully`);
   }
+  catch(error){
+    res.send("Joseph we got this "+error);
+  } 
+  
 });
 
 app.put("/courses/:name/:new",(req,res)=>{
-  courses.
-  res.send("course data updated successfully");
+  try{
+    courses.find((course)=>{
+        if(course.name==req.params.name){
+          course.name=req.params.new;
+        }
+      })
+    res.send("course data updated successfully");
+  }
+  catch(error){
+    res.send("Joseph we got this "+error);
+  }
+  
+})
+
+app.delete("/courses/:name",(req,res)=>{
+  try{
+    courses.forEach(course=>{ 
+      if(course.name==req.params.name) courses.pop(course);
+    })
+    res.send(`${req.params.name} is deleted successfully joseph`)
+  }catch(err){
+    res.send(`we got this \n${err} error Joseph`);
+  }
 })
 
 figlet("HELLO JOSEPH", (err, data) => {
