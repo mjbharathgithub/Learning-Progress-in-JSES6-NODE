@@ -1,17 +1,12 @@
 const express = require('express');
+const middleware=require("./myMiddleware/middlewares");
 const app = express();
 
 // Middleware 1
-app.use((req, res, next) => {
-  console.log('Middleware 1');
-  next(); // Pass control to the next middleware
-});
+app.use(middleware.middleware1);
 
 // Middleware 2
-app.use((req, res, next) => {
-  console.log('Middleware 2');
-  next(); // Pass control to the next middleware
-});
+app.use(middleware.middleware2);
 
 // Middleware 3 with route-specific middleware
 app.get('/example', (req, res, next) => {
