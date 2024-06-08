@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "figlet": "^1.7.0"
+    "figlet": "^1.7.0",
+    "morgan": "^1.10.0"
   }
 }

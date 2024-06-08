@@ -1,6 +1,8 @@
 const express = require('express');
 const middleware=require("./myMiddleware/middlewares");
+const morgan=require("morgan");
 const app = express();
+app.use(morgan);
 
 // Middleware 1
 app.use(middleware.middleware1);
