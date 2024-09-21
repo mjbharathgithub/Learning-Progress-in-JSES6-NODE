@@ -8,7 +8,6 @@ cp.execSync('start chrome https:github.com/mjbharathgithub');
 //used to open a my github as a sub process
 
 
-
-console.log("output"+cp.execSync("node test.js"));
+console.log("output : "+cp.execSync("node test.js"));
 
 //used to execute a another node file as a sub process
