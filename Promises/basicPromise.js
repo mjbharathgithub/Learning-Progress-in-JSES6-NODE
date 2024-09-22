@@ -16,3 +16,14 @@ promise.then((fullfilledPromis)=>{console.log(fullfilledPromis)});//promised res
 promise.catch(rejectedPromis=>{console.log(rejectedPromis)});//promise rejected state
 
 //promise settled state
+
+let pm = new Promise((res,rej)=>{
+  let a=4,b=5;
+  if(a==b){
+    res("its resolved");
+  }else {
+    rej("Its rejected");
+  }
+});
+
+pm.then(dat=>console.log(dat)).catch(rej=>console.log(rej));

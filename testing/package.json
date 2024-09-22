@@ -1,0 +1,23 @@
+{
+  "name": "tester",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "this is a sample file used to revise nodejs",
+  "main": "workingWithNode.js",
+  "scripts": {
+    "start": "node workingWithNode.js",
+    "test": "releaseScripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "na"
+  },
+  "keywords": [
+    "na"
+  ],
+  "author": "joseph bharath",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "tester": "file:"
+  }
+}
